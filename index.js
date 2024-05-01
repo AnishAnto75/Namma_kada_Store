@@ -5,7 +5,7 @@ import cors from 'cors'
 import 'dotenv/config'
 import userRoutes from './routes/userRoutes.js'
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 5000
 const MONGODB_URL = process.env.MONGODB_URL
 
 app.use(express.json())
